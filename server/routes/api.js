@@ -13,6 +13,13 @@ const connection = (closure) => {
         closure(db);
     });
 }
+// const connection = (closure) => {
+//     return MongoClient.connect('mongodb://localhost:27017/mean', (err, db) => {
+//         if (err) return console.log(err);
+
+//         closure(db);
+//     });
+// };
 
 // Error handling
 const sendError = (err, res) => {
